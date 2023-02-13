@@ -1,3 +1,6 @@
+/****************************/
+/* BELOW 1000px */
+/****************************/
 @media (max-width:62.5em) {
     .primary-heading {
         font-size: 5.2rem;
@@ -27,6 +30,9 @@
     }
 }
 
+/****************************/
+/* BELOW 976px */
+/****************************/
 @media (max-width:61em) {
     .section-about .grid--2-cols {
         grid-template-columns: 1fr;
@@ -50,6 +56,9 @@
 
 }
 
+/****************************/
+/* BELOW 928px */
+/****************************/
 @media (max-width:58em) {
     .menu-icon {
         justify-self: flex-end;
@@ -120,15 +129,20 @@
         position: absolute;
         background-color: white;
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         inset: 0;
-        top: 100%;
+        transform: translateY(80px);
         padding: 2.4rem 4.2rem;
         transition: all 0.3s;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
+        z-index: 999;
+        -webkit-transform: translateY(80px);
+        -moz-transform: translateY(80px);
+        -ms-transform: translateY(80px);
+        -o-transform: translateY(80px);
     }
 
     .openlist .nav--list {
@@ -148,6 +162,9 @@
     }
 }
 
+/****************************/
+/* BELOW 912px */
+/****************************/
 @media (max-width:57em) {
     .primary-heading {
         font-size: 4.2rem;
@@ -163,6 +180,9 @@
 }
 
 
+/****************************/
+/* BELOW 864px */
+/****************************/
 @media (max-width:54em) {
     .service-heading {
         font-size: 2.4rem;
@@ -181,12 +201,18 @@
 
 }
 
+/****************************/
+/* BELOW 800px */
+/****************************/
 @media (max-width:50em) {
     .nav--tab {
         width: 100%;
     }
 }
 
+/****************************/
+/* BELOW 784px */
+/****************************/
 @media (max-width:49em) {
     .experience {
         display: grid;
@@ -199,7 +225,9 @@
     }
 }
 
-
+/****************************/
+/* BELOW 768px */
+/****************************/
 @media (max-width:48em) {
     .grid--2-cols {
         grid-template-columns: 1fr;
@@ -215,6 +243,9 @@
     }
 }
 
+/****************************/
+/* BELOW 720px */
+/****************************/
 @media (max-width:45em) {
     .container {
         padding: 2.4rem 1.2rem;
@@ -260,6 +291,9 @@
 
 }
 
+/****************************/
+/* BELOW 576px */
+/****************************/
 @media (max-width:36em) {
     .nav--tab {
         width: 100%;
@@ -277,6 +311,9 @@
     }
 }
 
+/****************************/
+/* BELOW 544px */
+/****************************/
 @media (max-width:34em) {
     .sub-heading {
         width: 90%;
@@ -297,6 +334,9 @@
     }
 }
 
+/****************************/
+/* BELOW 448px */
+/****************************/
 @media (max-width:28em) {
     .nav--tab {
         width: 100%;
@@ -308,7 +348,9 @@
     }
 }
 
-
+/****************************/
+/* BELOW 336px */
+/****************************/
 @media (max-width:21em) {
     .about--btns {
         flex-direction: column;
