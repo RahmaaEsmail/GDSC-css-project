@@ -26,10 +26,11 @@ window.onscroll = function () {
 };
 
 function myFunction() {
-    if (window.pageYOffset >= 100) {
-        header.classList.add("sticky")
-    } else {
-        header.classList.remove("sticky");
+    if (window.pageYOffset == 0) {
+        header.classList.remove("change-bg")
+    }
+    else {
+        header.classList.add("change-bg")
     }
 }
 
