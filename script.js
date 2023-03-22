@@ -21,9 +21,7 @@ menuIcon.addEventListener("click", () => {
 
 
 
-window.onscroll = function () {
-    myFunction()
-};
+
 
 function myFunction() {
     if (window.pageYOffset == 0) {
@@ -34,6 +32,28 @@ function myFunction() {
     }
 }
 
+
+
+// initialize variable to detect if fun called or not 
+let pause ,x=0;
+const throttle = (cb,delay=250)=>{
+    // if fun is called ,pause throttle fun
+    if(pause) return;
+
+    // if fun isn't called ,return throttle fun
+    pause = true;
+     setTimeout(()=>{
+        cb();
+        console.log(`throttle ${x++}`);
+    //  fun is called ,pause throttle fun
+        pause=false;
+     },delay)
+}
+
+
+window.addEventListener("scroll",()=>{
+    throttle(myFunction)
+})
 
 
 
